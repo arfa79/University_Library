@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60481591-7F9C-4716-A6D6-5C466E447C47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OS_Lab_4001</RootNamespace>
+    <AssemblyName>OS_Lab_4001</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\marezayeye\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3BAB5F5C4A03E9DB9C6EC26CC66C410D13B26193</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DB_Lab_4001_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_new_user_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_new_user_form.Designer.cs">
+      <DependentUpon>add_new_user_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category_Add.Designer.cs">
+      <DependentUpon>Category_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category_form.Designer.cs">
+      <DependentUpon>category_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books_form.Designer.cs">
+      <DependentUpon>Books_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_user.Designer.cs">
+      <DependentUpon>edit_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lend_return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lend_return.Designer.cs">
+      <DependentUpon>lend_return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="new_lend_confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_lend_confirmation.Designer.cs">
+      <DependentUpon>new_lend_confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_lend_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_lend_form.Designer.cs">
+      <DependentUpon>new_lend_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lend_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lend_form.Designer.cs">
+      <DependentUpon>lend_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form.Designer.cs">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="user_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_form.Designer.cs">
+      <DependentUpon>user_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_new_user_form.resx">
+      <DependentUpon>add_new_user_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category_Add.resx">
+      <DependentUpon>Category_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category_form.resx">
+      <DependentUpon>category_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books_form.resx">
+      <DependentUpon>Books_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_user.resx">
+      <DependentUpon>edit_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lend_return.resx">
+      <DependentUpon>lend_return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_lend_confirmation.resx">
+      <DependentUpon>new_lend_confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_lend_form.resx">
+      <DependentUpon>new_lend_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lend_form.resx">
+      <DependentUpon>lend_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form.resx">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_form.resx">
+      <DependentUpon>user_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_Lab_4001_TemporaryKey.pfx" />
+    <None Include="Library_DBDataSet.xsc">
+      <DependentUpon>Library_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DBDataSet.xss">
+      <DependentUpon>Library_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_39_Create-a-Login-Form-in-Adobe-Photoshop-From-Scratch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
