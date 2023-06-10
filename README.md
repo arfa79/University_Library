@@ -1,6 +1,6 @@
-# DB_Lab_4001
+# university_Library
 To Do List :
-1. <strike>Syncronizing Connection Strings across all Forms (Recommended CS: "Data Source=.;Initial Catalog=Library_DB;Integrated Security=True")
+1. <strike>Syncronizing Connection Strings across all Forms 
  
 2. Finalizing Lends,Users and Category Forms
 3. Perform Database Modifications (eg. Self-Increamented Identity Column For tblUsers,tblBooks,tblLend and adding required Relations)
