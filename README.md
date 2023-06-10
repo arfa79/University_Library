@@ -1,3 +1,12 @@
+To run :
+
+    git clone the repository
+    attach DB files to MSSQLSERVER
+    Open the cloned repo in VS as a Project via .sln file
+    Add data source to the project via Project> add data source menu
+    Copy Connection String and replace it in .cs forms according to Connection Strings Location file in main repo.
+    Rebuild and Run.
+
 # university_Library
 To Do List :
 1. <strike>Syncronizing Connection Strings across all Forms 
