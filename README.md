@@ -1,11 +1,11 @@
 To run :
 
-    git clone the repository
-    attach DB files to MSSQLSERVER
-    Open the cloned repo in VS as a Project via .sln file
-    Add data source to the project via Project> add data source menu
-    Copy Connection String and replace it in .cs forms according to Connection Strings Location file in main repo.
-    Rebuild and Run.
+   1. git clone the repository
+   2. attach DB files to MSSQLSERVER
+   3. Open the cloned repo in VS as a Project via .sln file
+   4. Add data source to the project via Project> add data source menu
+   5. Copy Connection String and replace it in .cs forms according to Connection Strings Location file in main repo.
+   6. Rebuild and Run.
 
 # university_Library
 To Do List :
